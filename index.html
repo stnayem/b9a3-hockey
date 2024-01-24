@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys</title>
+    <!-- Tailwind and DaisyUI cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Customizing config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'hockey-primary': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <!-- google fonts: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <!-- carousel section -->
+        <div class="carousel sm:h-[200px] lg:h-[550px] w-full bg-cyan-400">
+            <!-- slide-1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="images/1.png" class="w-full h-full object-cover" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❯</a>
+                </div>
+            </div>
+            <!-- slide-2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/hockey-trophy.jpg" class="w-full h-full object-cover" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❮</a>
+                    <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❯</a>
+                </div>
+            </div>
+
+            <!-- slide-3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/hockey-game.jpg" class="w-full h-full object-cover" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❮</a>
+                    <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❯</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <!-- professional hockey club section -->
+        <section>
+
+        </section>
+
+
+        <!-- program sections -->
+        <section>
+
+        </section>
+
+        <!-- new products section -->
+        <section>
+
+        </section>
+
+        <!-- faq accordion section -->
+        <section>
+
+        </section>
+
+        <!-- get in touch and social media section -->
+        <section>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
