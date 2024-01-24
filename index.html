@@ -22,7 +22,11 @@
                         'hockey-primary': '#FF4240',
                         'hockey-black': '#131318',
                         'hockey-gray': 'rgba(19, 19, 24, 0.60)',
+                        'hockey-gray-2': 'rgba(255, 255, 255, 0.60)',
                         'hockey-gray-light': 'rgba(19, 19, 24, 0.03)',
+                        'colors-001': 'rgba(188, 237, 109, 0.10)',
+                        'colors-002': 'rgba(253, 221, 95, 0.10)',
+                        'colors-003': 'rgba(98, 156, 243, 0.10)',
                     }
                 }
             }
@@ -505,9 +509,81 @@
             <hr class="mb-6 lg:mb-12 border-dashed" style="border-width:1px">
 
             <!-- inner-section: get in touch -->
+            <div class="flex flex-col gap-6 lg:flex-row">
+                <div class="lg:w-[40%] border-2 rounded-lg p-6 lg:p-12 space-y-4 lg:space-y-6">
+                    <!-- card-1 -->
+                    <div class="p-6 rounded-lg bg-colors-001">
+                        <img class="mb-6" src="./images/get-in-touch-01.png" alt="">
+                        <p class="text-base font-normal text-hockey-gray">Phone Number : </p>
+                        <h4 class="text-medium font-extrabold text-hockey-black">(+62) 123-321-543</h4>
+                    </div>
 
+                    <!-- card-2 -->
+                    <div class="p-6 rounded-lg bg-colors-002">
+                        <img class="mb-6" src="./images/get-in-touch-02.png" alt="">
+                        <p class="text-base font-normal text-hockey-gray">Email :</p>
+                        <h4 class="text-medium font-extrabold text-hockey-black">hockeys@support.com</h4>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="p-6 rounded-lg bg-colors-003">
+                        <img class="mb-6" src="./images/get-in-touch-03.png" alt="">
+                        <p class="text-base font-normal text-hockey-gray">Location : </p>
+                        <h4 class="text-medium font-extrabold text-hockey-black">152/1 Mohakhali Wireless Gate</h4>
+                    </div>
+
+                </div>
+
+                <div class="lg:w-[60%]">
+                    <!-- form -->
+                    <form class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
+                        <div>
+                            <label class="label">
+                                <span class="text-base label-text">Your Name</span>
+                            </label>
+                            <input type="text" placeholder="Enter your full name" class="w-full input input-bordered" />
+                        </div>
+                        <div>
+                            <label class="label">
+                                <span class="text-base label-text">Your Email</span>
+                            </label>
+                            <input type="text" placeholder="Enter your email" class="w-full input input-bordered" />
+                        </div>
+
+                        <div>
+                            <label class="label">
+                                <span class="text-base label-text">Subject</span>
+                            </label>
+                            <input type="text" placeholder="Enter your subject" class="w-full input input-bordered" />
+                        </div>
+                        <div>
+                            <label class="label">
+                                <span class="text-base label-text">Phone Number</span>
+                            </label>
+                            <input type="text" placeholder="Enter your phone number"
+                                class="w-full input input-bordered" />
+                        </div>
+
+
+
+                        <div class="lg:col-span-2">
+                            <label class="label">
+                                <span class="text-base label-text">Message</span>
+                            </label>
+                            <textarea class="textarea textarea-bordered w-full h-[200px] lg:h-[370px]"
+                                placeholder="Write your message"></textarea>
+                        </div>
+
+                        <div class="lg:col-span-2">
+                            <button class="btn btn-block text-xl font-bold bg-hockey-primary text-white">Send
+                                Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div></div>
+            </div>
             <!-- inner-section: social media -->
-            <div class="p-7  lg:p-9 flex flex-col justify-center items-center rounded-lg bg-hockey-gray-light gap-6">
+            <div
+                class="mt-10 lg:mt-12 p-7  lg:p-9 flex flex-col justify-center items-center rounded-lg bg-hockey-gray-light gap-6">
                 <h3 class="text-2xl text-hockey-black font-extrabold ">Social Media</h3>
                 <div class="flex gap-8">
                     <i class="fa-brands fa-x-twitter"></i>
@@ -518,7 +594,51 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer
+        class="text-center justify-center lg:text-left grid grid-cols-2 lg:grid-cols-4 p-10 lg:py-24 lg:px-32 bg-hockey-black mt-6 lg:mt-24">
+        <nav class="col-span-2 lg:col-span-1">
+            <h3 class="text-2xl lg:text-3xl text-white font-extrabold pb-4">Get In Touch</h3>
+            <p class="w-[50%] text-center lg:text-left text-base font-medium mb-5 lg:mb-6 text-hockey-gray-2">Dit amet
+                consectetur.
+                Condimentum
+                adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            <div class="flex items-center gap-4">
+                <i class="fa-regular fa-envelope text-hockey-primary"></i>
+                <p class="text-base font-medium mb-4 text-hockey-gray-2">hockeys@support.com</p>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-phone text-hockey-primary"></i>
+                <p class="text-base font-medium mb-4 text-hockey-gray-2">(+62) 123-321-543</p>
+            </div>
+        </nav>
+
+        <nav class="flex flex-col">
+            <header class="text-2xl lg:text-xl text-white font-bold pb-6">Company</header>
+            <a class="text-base font-medium mb-4 text-hockey-gray-2">About us</a>
+            <a class="text-base font-medium mb-4 text-hockey-gray-2">Leadership</a>
+            <a class="text-base font-medium mb-4 text-hockey-gray-2">Careers</a>
+            <a class="text-base font-medium mb-4 text-hockey-gray-2">News & Article</a>
+            <a class="text-base font-medium mb-4 text-hockey-gray-2">Legal Notice</a>
+        </nav>
+
+
+        <nav class="flex flex-col">
+            <header class="text-2xl lg:text-xl text-white font-bold pb-6">Support</header>
+            <a class="text-base font-medium mb-4 text-hockey-gray-2">Help Center</a>
+            <a class="text-base font-medium mb-4 text-hockey-gray-2">FAQ</a>
+            <a class="text-base font-medium mb-4 text-hockey-gray-2">Ticket Support</a>
+            <a class="text-base font-medium mb-4 text-hockey-gray-2">Contact Us</a>
+        </nav>
+
+
+        <nav class="col-span-2 lg:col-span-1 flex flex-col">
+            <header class="text-2xl lg:text-xl text-white font-bold pb-6">Services</header>
+            <a class="text-base font-medium mb-4 text-hockey-gray-2">Academy</a>
+            <a class="text-base font-medium mb-4 text-hockey-gray-2">Group Lesson</a>
+            <a class="text-base font-medium mb-4 text-hockey-gray-2">Private Lesson</a>
+        </nav>
 
     </footer>
 </body>
