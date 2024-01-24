@@ -17,6 +17,8 @@
                     colors: {
                         clifford: '#da373d',
                         'hockey-primary': '#FF4240',
+                        'hockey-black': '#131318',
+                        'hockey-gray': 'rgba(19, 19, 24, 0.60)',
                     }
                 }
             }
@@ -38,9 +40,9 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto">
+    <header class="max-w-96 lg:max-w-6xl px-5 mx-auto">
         <!-- carousel section -->
-        <div class="carousel sm:h-[200px] lg:h-[550px] w-full bg-cyan-400">
+        <div class="carousel sm:h-[200px] lg:h-[550px] w-full  rounded-lg bg-cyan-400">
             <!-- slide-1 -->
             <div id="slide1" class="carousel-item relative w-full">
                 <img src="images/1.png" class="w-full h-full object-cover" />
@@ -51,7 +53,7 @@
             </div>
             <!-- slide-2 -->
             <div id="slide2" class="carousel-item relative w-full">
-                <img src="images/hockey-trophy.jpg" class="w-full h-full object-cover" />
+                <img src="images/hockey-game-02.jpg" class="w-full h-full object-cover" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❮</a>
                     <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❯</a>
@@ -69,21 +71,129 @@
 
         </div>
     </header>
-    <main>
+    <main class="max-w-96 lg:max-w-6xl px-5 mx-auto">
         <!-- professional hockey club section -->
         <section>
+            <hr class="mt-10 lg:mt-24 border-dashed" style="border-width:1px">
+            <div class="flex flex-col items-center text-center py-6 lg:py-8 space-y-4 lg:space-y-6">
+                <h2 class="text-xl lg:text-4xl text-hockey-black font-extrabold">Professional Hockeys Club</h2>
+                <p class="text-sm lg:text-base font-medium lg:max-w-[610px] text-hockey-gray">Dit amet consectetur.
+                    Condimentum dignissim adipiscing aliquam
+                    turpis
+                    placerat
+                    dolor. Purus urna in sit
+                    nullam proin. </p>
+            </div>
+            <hr class="border-dashed" style="border-width:1px">
 
+            <div class="flex flex-col lg:flex-row mt-12 gap-6 lg:gap-0">
+                <div class="flex flex-col items-center space-y-4 text-center">
+                    <div class="radial-progress text-hockey-primary" style="--value:87;" role="progressbar">87%</div>
+                    <h3 class="text-hockey-black text-xl font-semibold">Prayer Facility</h3>
+                    <p class="text-hockey-gray">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+
+                <div class="flex flex-col items-center space-y-4 text-center">
+                    <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    <h3 class="text-hockey-black text-xl font-semibold">Experienced Coach</h3>
+                    <p class="text-hockey-gray">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="flex flex-col items-center space-y-4 text-center">
+                    <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                    <h3 class="text-hockey-black text-xl font-semibold">Senior Player</h3>
+                    <p class="text-hockey-gray">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="flex flex-col items-center space-y-4 text-center">
+                    <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                    <h3 class="text-hockey-black text-xl font-semibold">Training Ground</h3>
+                    <p class="text-hockey-gray">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+
+            </div>
         </section>
-
 
         <!-- program sections -->
         <section>
+            <hr class="mt-10 lg:mt-24 border-dashed" style="border-width:1px">
+            <div class="flex flex-col items-center text-center py-8 space-y-6">
+                <h2 class="text-xl lg:text-4xl text-hockey-black font-extrabold">Program Sections</h2>
+                <p class="text-sm lg:text-base font-medium lg:max-w-[610px] text-hockey-gray">Dit amet consectetur.
+                    Condimentum dignissim adipiscing aliquam
+                    turpis
+                    placerat
+                    dolor. Purus urna in sit
+                    nullam proin. </p>
+            </div>
+            <hr class="mb-6 lg:mb-12 border-dashed" style="border-width:1px">
+
+            <!-- program sections: (display:grid)==> 3 div -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- card-1 -->
+                <div class="lg:h-[338px] relative z-1 rounded-lg bg-[url('/images/2.png')]  bg-no-repeat bg-cover">
+                    <div class="absolute z-2 bg-black w-full h-full opacity-50  rounded-lg"></div>
+                    <div
+                        class="relative z-3 flex flex-col justify-end items-start space-y-3 lg:space-y-4 p-6 lg:p-10 text-white w-full h-full">
+                        <h3 class="text-xl lg:text-3xl font-extrabold">Junior Program</h3>
+                        <p class="text-sm  lg:w-[90%] lg:text-base font-medium">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Sunt, laboriosam nulla officia harum
+                            cupiditate aperiam mollitia? Quos sit id sequi.</p>
+                        <button
+                            class="px-4 py-2 text-[18px] lg:px-[22px] lg:py-[10px] lg:text-xl lg:font-bold rounded-lg bg-hockey-primary">Register
+                            Now!</button>
+                    </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="lg:h-[338px] relative z-1 rounded-lg bg-[url('/images/3.png')] bg-no-repeat bg-cover">
+                    <div class="absolute z-2 bg-black w-full h-full opacity-50  rounded-lg"></div>
+                    <div
+                        class="relative z-3 flex flex-col justify-end items-start space-y-3 lg:space-y-4 p-6 lg:p-10 text-white  w-full h-full">
+                        <h3 class="text-xl lg:text-3xl font-extrabold">Teenager Program</h3>
+                        <p class="text-sm  lg:w-[90%] lg:text-base font-medium">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Sunt, laboriosam nulla officia harum
+                            cupiditate aperiam mollitia? Quos sit id sequi.</p>
+                        <button
+                            class="px-4 py-2 text-[18px] lg:px-[22px] lg:py-[10px] lg:text-xl lg:font-bold rounded-lg bg-hockey-primary">Register
+                            Now!</button>
+                    </div>
+                </div>
+
+                <!-- card-3 -->
+                <div
+                    class="lg:h-[450px] lg:col-span-2 relative z-1 rounded-lg bg-[url('/images/4.png')] bg-no-repeat bg-cover">
+                    <div class="absolute z-2 bg-black w-full h-full opacity-50 rounded-lg"></div>
+                    <div
+                        class="relative z-3 flex flex-col justify-end items-start space-y-3 lg:space-y-4 p-6 lg:p-10 text-white  w-full h-full">
+                        <h3 class="text-xl lg:text-3xl font-extrabold">Professional Program</h3>
+                        <p class="text-sm lg:w-[50%] lg:text-base font-medium">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Sunt, laboriosam nulla officia harum
+                            cupiditate aperiam mollitia? Quos sit id sequi.</p>
+                        <button
+                            class="px-4 py-2 text-[18px] lg:px-[22px] lg:py-[10px] lg:text-xl lg:font-bold rounded-lg bg-hockey-primary">Register
+                            Now!</button>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
 
         <!-- new products section -->
         <section>
-
+            <hr class="mt-10 lg:mt-24 border-dashed" style="border-width:1px">
+            <div class="flex flex-col items-center text-center py-8 space-y-6">
+                <h2 class="text-xl lg:text-4xl text-hockey-black font-extrabold">Our New Products</h2>
+                <p class="text-sm lg:text-base font-medium lg:max-w-[610px] text-hockey-gray">Dit amet consectetur.
+                    Condimentum dignissim adipiscing aliquam
+                    turpis
+                    placerat
+                    dolor. Purus urna in sit
+                    nullam proin. </p>
+            </div>
+            <hr class="mb-6 lg:mb-12 border-dashed" style="border-width:1px">
         </section>
 
         <!-- faq accordion section -->
