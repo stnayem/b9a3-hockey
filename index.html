@@ -22,6 +22,7 @@
                         'hockey-primary': '#FF4240',
                         'hockey-black': '#131318',
                         'hockey-gray': 'rgba(19, 19, 24, 0.60)',
+                        'hockey-gray-light': 'rgba(19, 19, 24, 0.03)',
                     }
                 }
             }
@@ -48,7 +49,7 @@
         <div class="carousel sm:h-[200px] lg:h-[550px] w-full  rounded-lg bg-cyan-400">
             <!-- slide-1 -->
             <div id="slide1" class="carousel-item relative w-full">
-                <img src="images/1.png" class="w-full h-full object-cover" />
+                <img src="./images/1.png" class="w-full h-full object-cover" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❮</a>
                     <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❯</a>
@@ -56,7 +57,7 @@
             </div>
             <!-- slide-2 -->
             <div id="slide2" class="carousel-item relative w-full">
-                <img src="images/hockey-game-02.jpg" class="w-full h-full object-cover" />
+                <img src="./images/hockey-game-02.jpg" class="w-full h-full object-cover" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❮</a>
                     <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❯</a>
@@ -65,7 +66,7 @@
 
             <!-- slide-3 -->
             <div id="slide3" class="carousel-item relative w-full">
-                <img src="images/hockey-game.jpg" class="w-full h-full object-cover" />
+                <img src="./images/hockey-game.jpg" class="w-full h-full object-cover" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❮</a>
                     <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❯</a>
@@ -197,16 +198,324 @@
                     nullam proin. </p>
             </div>
             <hr class="mb-6 lg:mb-12 border-dashed" style="border-width:1px">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- card-1 -->
+                <div class="flex flex-col lg:flex-row gap-5 border-2 rounded-lg p-6">
+                    <!-- left part -->
+                    <div>
+                        <img class="w-full lg:w-auto" src="./images/5.png" alt="">
+                    </div>
+
+                    <!-- right part -->
+                    <div class="flex flex-col justify-between">
+                        <!-- rating, view, likes -->
+                        <div class="flex flex-row items-center gap-4">
+                            <div class="flex flex-row gap-2 items-center">
+                                <i class="fa-solid fa-star" style="color:#F99808"></i>
+                                <p class="text-base font-medium text-hockey-gray">5.0</p>
+                            </div>
+
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-eye"></i>
+                                <p class="text-base font-medium">20</p>
+                            </div>
+
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="text-base font-medium">200</p>
+                            </div>
+                        </div>
+
+                        <!-- title and description -->
+                        <h4 class="text-xl text-hockey-black font-extrabold">World Cup Flags Football</h4>
+                        <p class="text-base font-medium text-hockey-gray">Dolor sit amet consectetur. Ut urna diam quis
+                            sagittis. </p>
+
+                        <!-- price and delivery fee -->
+                        <div class="flex flex-row items-center justify-between">
+                            <div>
+                                <p class="text-[18px] font-extrabold text-hockey-primary">Price - $22.00</p>
+                            </div>
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="text-base font-medium">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="flex flex-col lg:flex-row gap-5 border-2 rounded-lg p-6">
+                    <!-- left part -->
+                    <div>
+                        <img class="w-full lg:w-auto" src="./images/6.png" alt="">
+                    </div>
+
+                    <!-- right part -->
+                    <div class="flex flex-col justify-between">
+                        <!-- rating, view, likes -->
+                        <div class="flex flex-row items-center gap-4">
+                            <div class="flex flex-row gap-2 items-center">
+                                <i class="fa-solid fa-star" style="color:#F99808"></i>
+                                <p class="text-base font-medium text-hockey-gray">5.0</p>
+                            </div>
+
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-eye"></i>
+                                <p class="text-base font-medium">20</p>
+                            </div>
+
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="text-base font-medium">200</p>
+                            </div>
+                        </div>
+
+                        <!-- title and description -->
+                        <h4 class="text-xl text-hockey-black font-extrabold">World Cup Flags Football</h4>
+                        <p class="text-base font-medium text-hockey-gray">Dolor sit amet consectetur. Ut urna diam quis
+                            sagittis. </p>
+
+                        <!-- price and delivery fee -->
+                        <div class="flex flex-row items-center justify-between">
+                            <div>
+                                <p class="text-[18px] font-extrabold text-hockey-primary">Price - $22.00</p>
+                            </div>
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="text-base font-medium">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-3 -->
+                <div class="flex flex-col lg:flex-row gap-5 border-2 rounded-lg p-6">
+                    <!-- left part -->
+                    <div>
+                        <img class="w-full lg:w-auto" src="./images/7.png" alt="">
+                    </div>
+
+                    <!-- right part -->
+                    <div class="flex flex-col justify-between">
+                        <!-- rating, view, likes -->
+                        <div class="flex flex-row items-center gap-4">
+                            <div class="flex flex-row gap-2 items-center">
+                                <i class="fa-solid fa-star" style="color:#F99808"></i>
+                                <p class="text-base font-medium text-hockey-gray">5.0</p>
+                            </div>
+
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-eye"></i>
+                                <p class="text-base font-medium">20</p>
+                            </div>
+
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="text-base font-medium">200</p>
+                            </div>
+                        </div>
+
+                        <!-- title and description -->
+                        <h4 class="text-xl text-hockey-black font-extrabold">World Cup Flags Football</h4>
+                        <p class="text-base font-medium text-hockey-gray">Dolor sit amet consectetur. Ut urna diam quis
+                            sagittis. </p>
+
+                        <!-- price and delivery fee -->
+                        <div class="flex flex-row items-center justify-between">
+                            <div>
+                                <p class="text-[18px] font-extrabold text-hockey-primary">Price - $22.00</p>
+                            </div>
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="text-base font-medium">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-4 -->
+                <div class="flex flex-col lg:flex-row gap-5 border-2 rounded-lg p-6">
+                    <!-- left part -->
+                    <div>
+                        <img class="w-full lg:w-auto" src="./images/8.png" alt="">
+                    </div>
+
+                    <!-- right part -->
+                    <div class="flex flex-col justify-between">
+                        <!-- rating, view, likes -->
+                        <div class="flex flex-row items-center gap-4">
+                            <div class="flex flex-row gap-2 items-center">
+                                <i class="fa-solid fa-star" style="color:#F99808"></i>
+                                <p class="text-base font-medium text-hockey-gray">5.0</p>
+                            </div>
+
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-eye"></i>
+                                <p class="text-base font-medium">20</p>
+                            </div>
+
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="text-base font-medium">200</p>
+                            </div>
+                        </div>
+
+                        <!-- title and description -->
+                        <h4 class="text-xl text-hockey-black font-extrabold">World Cup Flags Football</h4>
+                        <p class="text-base font-medium text-hockey-gray">Dolor sit amet consectetur. Ut urna diam quis
+                            sagittis. </p>
+
+                        <!-- price and delivery fee -->
+                        <div class="flex flex-row items-center justify-between">
+                            <div>
+                                <p class="text-[18px] font-extrabold text-hockey-primary">Price - $22.00</p>
+                            </div>
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="text-base font-medium">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-5 -->
+                <div class="flex flex-col lg:flex-row gap-5 border-2 rounded-lg p-6">
+                    <!-- left part -->
+                    <div>
+                        <img class="w-full lg:w-auto" src="./images/9.png" alt="">
+                    </div>
+
+                    <!-- right part -->
+                    <div class="flex flex-col justify-between">
+                        <!-- rating, view, likes -->
+                        <div class="flex flex-row items-center gap-4">
+                            <div class="flex flex-row gap-2 items-center">
+                                <i class="fa-solid fa-star" style="color:#F99808"></i>
+                                <p class="text-base font-medium text-hockey-gray">5.0</p>
+                            </div>
+
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-eye"></i>
+                                <p class="text-base font-medium">20</p>
+                            </div>
+
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="text-base font-medium">200</p>
+                            </div>
+                        </div>
+
+                        <!-- title and description -->
+                        <h4 class="text-xl text-hockey-black font-extrabold">World Cup Flags Football</h4>
+                        <p class="text-base font-medium text-hockey-gray">Dolor sit amet consectetur. Ut urna diam quis
+                            sagittis. </p>
+
+                        <!-- price and delivery fee -->
+                        <div class="flex flex-row items-center justify-between">
+                            <div>
+                                <p class="text-[18px] font-extrabold text-hockey-primary">Price - $22.00</p>
+                            </div>
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="text-base font-medium">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-6 -->
+                <div class="flex flex-col lg:flex-row gap-5 border-2 rounded-lg p-6">
+                    <!-- left part -->
+                    <div>
+                        <img class="w-full lg:w-auto" src="./images/10.png" alt="">
+                    </div>
+
+                    <!-- right part -->
+                    <div class="flex flex-col justify-between">
+                        <!-- rating, view, likes -->
+                        <div class="flex flex-row items-center gap-4">
+                            <div class="flex flex-row gap-2 items-center">
+                                <i class="fa-solid fa-star" style="color:#F99808"></i>
+                                <p class="text-base font-medium text-hockey-gray">5.0</p>
+                            </div>
+
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-eye"></i>
+                                <p class="text-base font-medium">20</p>
+                            </div>
+
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="text-base font-medium">200</p>
+                            </div>
+                        </div>
+
+                        <!-- title and description -->
+                        <h4 class="text-xl text-hockey-black font-extrabold">World Cup Flags Football</h4>
+                        <p class="text-base font-medium text-hockey-gray">Dolor sit amet consectetur. Ut urna diam quis
+                            sagittis. </p>
+
+                        <!-- price and delivery fee -->
+                        <div class="flex flex-row items-center justify-between">
+                            <div>
+                                <p class="text-[18px] font-extrabold text-hockey-primary">Price - $22.00</p>
+                            </div>
+                            <div class="flex flex-row gap-2 items-center text-hockey-gray">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="text-base font-medium">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
 
         <!-- faq accordion section -->
         <section>
+            <hr class="mt-10 lg:mt-24 border-dashed" style="border-width:1px">
+            <div class="flex flex-col items-center text-center py-8 space-y-6">
+                <h2 class="text-xl lg:text-4xl text-hockey-black font-extrabold">Clients Question</h2>
+                <p class="text-sm lg:text-base font-medium lg:max-w-[610px] text-hockey-gray">Dit amet consectetur.
+                    Condimentum dignissim adipiscing aliquam
+                    turpis
+                    placerat
+                    dolor. Purus urna in sit
+                    nullam proin. </p>
+            </div>
+            <hr class="mb-6 lg:mb-12 border-dashed" style="border-width:1px">
 
         </section>
 
         <!-- get in touch and social media section -->
         <section>
+            <hr class="mt-10 lg:mt-24 border-dashed" style="border-width:1px">
+            <div class="flex flex-col items-center text-center py-8 space-y-6">
+                <h2 class="text-xl lg:text-4xl text-hockey-black font-extrabold">Get In Touch</h2>
+                <p class="text-sm lg:text-base font-medium lg:max-w-[610px] text-hockey-gray">Dit amet consectetur.
+                    Condimentum dignissim adipiscing aliquam
+                    turpis
+                    placerat
+                    dolor. Purus urna in sit
+                    nullam proin. </p>
+            </div>
+            <hr class="mb-6 lg:mb-12 border-dashed" style="border-width:1px">
 
+            <!-- inner-section: get in touch -->
+
+            <!-- inner-section: social media -->
+            <div class="p-7  lg:p-9 flex flex-col justify-center items-center rounded-lg bg-hockey-gray-light gap-6">
+                <h3 class="text-2xl text-hockey-black font-extrabold ">Social Media</h3>
+                <div class="flex gap-8">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
